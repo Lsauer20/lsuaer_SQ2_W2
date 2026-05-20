@@ -19,8 +19,12 @@ The console will show any errors in your sketch.
 
 ## Assets
 
-No external assets used. All visuals are generated with p5.js.
+| File | Source |
+|------|--------|
+| `assets/images/coolguy.png` | Drawn by Karen Cochrane |
+| `assets/images/BGlol.jpg` | Drawn by Karen Cochrane |
 
 ## References
 
-N/A
+[1]
+[2]
