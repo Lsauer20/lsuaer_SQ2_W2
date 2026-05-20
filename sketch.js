@@ -20,6 +20,7 @@ let platforms = [
   { x: 400, y: 80, w: 160, h: 16, type: "bounce" }
 ];
 let bgImage;
+let coolguy;
 // ------------------------------------------------------------
 // PLAYER OBJECT
 // ------------------------------------------------------------
@@ -53,11 +54,11 @@ function setup() {
 }
 function preload() {
   bgImage = loadImage("assets/images/BGlol.jpg");
+  coolguy = loadImage("assets/images/coolguy.png");
 }
 // ============================================================
 function draw() {
-  background(10);
-
+  image(bgImage, 0, 0, width, height);
   handleInput();
   applyPhysics();
   resolvePlatformCollisions();
@@ -170,22 +171,10 @@ function drawPlatforms() {
 // ------------------------------------------------------------
 function drawPlayer() {
   push();
-  fill(0, 200, 180);
-  noStroke();
+  imageMode(CENTER);
 
-  beginShape();
-  let numPoints = 48;
-  for (let i = 0; i < numPoints; i++) {
-    let angle = (TWO_PI / numPoints) * i;
-    let noiseVal = noise(cos(angle) * 0.8 + blobT, sin(angle) * 0.8 + blobT);
-    let r = player.r + map(noiseVal, 0, 1, -7, 7);
-    vertex(player.x + cos(angle) * r, player.y + sin(angle) * r);
-  }
-  endShape(CLOSE);
-
-  fill(10);
-  ellipse(player.x - 7, player.y - 5, 7, 7);
-  ellipse(player.x + 7, player.y - 5, 7, 7);
+  // Draw the character image centered on the player
+  image(coolguy, player.x, player.y, player.r * 2, player.r * 2);
 
   pop();
 }
