@@ -19,10 +19,10 @@ The console will show any errors in your sketch.
 
 ## Assets
 
-| File | Source |
-|------|--------|
+| File                        | Source               |
+|----------------------------------------------------|
 | `assets/images/coolguy.png` | pulled from wikimedia|
-| `assets/images/BGlol.jpg` | Drawn by izzul fikry |
+| `assets/images/BGlol.jpg`   | Drawn by izzul fikry |
 
 ## References
 
