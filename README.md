@@ -21,8 +21,8 @@ The console will show any errors in your sketch.
 
 | File                        | Source               |
 |----------------------------------------------------| ----- |
-| `assets/images/coolguy.png` | pulled from wikimedia|
-| `assets/images/BGlol.jpg`   | Drawn by izzul fikry |
+| `assets/images/coolguy.png` [1]| pulled from wikimedia|
+| `assets/images/BGlol.jpg`   [2]| Drawn by izzul fikry |
 
 ## References
 
